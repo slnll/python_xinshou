@@ -1,0 +1,14 @@
+x,y = input().split()
+x = int(x)
+y = int(y)
+z = []
+for i in range(x,y+1):
+    z.append(i)
+sum = sum(z)
+for i in range(0,len(z)):
+    print("{:>5d}".format(z[i]),end="")
+    if (i+1)%5==0:
+        print("")
+if len(z) %5 != 0:
+    print()
+print("Sum =",sum)
