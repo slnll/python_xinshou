@@ -1,0 +1,9 @@
+def gcd(a,b):
+    while b !=0:
+        a,b =b,a%b
+    return a
+m,n = input()
+m =int(m)
+n =int(n)
+o = m*n/gcd(m,n)
+print("{} {}".format(gcd(m,n),o))
